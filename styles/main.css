@@ -1,0 +1,297 @@
+:root {
+   --headline-font: "Source Sans Pro", sans-serif;
+   --body-font: "Open Sans", sans-serif;
+}
+
+html {
+   font-size: 62.5%;
+}
+
+body {
+   font-size: 1rem;
+}
+
+*:focus, *:active {
+  outline: none;
+  border: none;
+
+}
+
+.sidebar {
+   display: none;
+   background-color: #1c4ca4;
+   color: #fff;
+   border: none;
+   outline: #1c4ca4;
+}
+
+.sidebar.open {
+   width: 100vw;
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   z-index: 999;
+   display: block;
+   height: 550vh;
+}
+
+.menu-button {
+   z-index: 1000;
+   position: relative;
+   background-color: #1c4ca4;
+}
+
+/*.box1 {
+   width: 100%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   box-sizing: border-box;
+}*/
+
+
+label {
+   font-weight: bold;
+}
+
+input {
+border: 0.2rem solid #909393;
+font-size: 2rem;
+font-family: OpenSans-Regular;
+width: 34.6rem;
+color: 
+#6e7674;
+margin-left: -0.4rem;
+margin-right: 2.1rem;
+}
+
+.content {
+   font-family: var(--body-font);
+   font-size: 2rem;
+   color: #575159;
+   height: 100vh;
+   position: relative;
+   padding-left: 1.6rem;
+   padding-right: 2rem;
+   z-index: 900;
+}
+
+textarea {
+   width: 100%;
+   height: 6rem;
+   color: #6e7674;
+   border: 0.2rem solid #909393;
+   padding: 1.6rem 0 1.7rem 1.7rem;
+}
+
+textarea[name="lname"] {
+   height: 131px;
+   padding-right: 3.4rem;
+}
+
+label {
+   font-weight: bold;
+}
+
+.placeholder {
+ color:#6e7674;
+ font-size: 2rem;
+}
+
+.submit-button {
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   border: none;
+   background-color: #1c4ca4;
+   color: #fff;
+   margin-top: 2rem;
+   text-decoration: none;
+   transition: opacity 0.5s ease-in;
+   height: 6.2rem;
+   margin-bottom: 2rem;
+}
+
+h1 {
+   font-size: 2.6rem;
+   color: #575159;
+   font-weight: 900;
+   font-family: var(--headline-font);
+}
+
+.job-info h2 {
+   font-family: var(--body-font);
+   font-weight: 300;
+   font-style: italic;
+   font-size: 1.6rem;
+   color: #575159;
+}
+
+p {
+   font-size: 1.8rem;
+   font-family: OpenSans-Regular;
+   color: #575159;
+   line-height: 3.5rem;
+}
+
+.send {
+   text-align: center;
+   color: #f2f2f2;
+   size: 26px;
+   box-sizing: border-box;
+   z-index: 500;
+   background-color: #1c4ca4;
+}
+
+.header {
+   width: 100%;
+   height: 0px;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+}
+
+.title-header {
+   justify-self: flex-start;
+}
+
+.body-wrapper {
+   padding: 0 5%;
+   margin-top: -2.5rem;
+}
+
+.image {
+   height: 110px;
+   width: 110px;
+   border-radius: 55px;
+   margin-right: 1%;
+   display: none;
+}
+
+.image-info {
+   display: flex;
+}
+
+.sidebar h1 {
+   color: #f2f2f2;
+   font-size: 30px;
+}
+
+.sidebar h2 {
+   font-family: SourceSansPro-Black;
+   font-size: 24px;
+   color: #f2f2f2;
+   font-style: none;
+}
+.sidebar p {
+   font-family: OpenSans-Regular;
+   line-height: 30px;
+   font-size: 20px;
+   color: 
+   #dafcf5;
+}
+
+.sidebar .body-wrapper1 {
+   padding: 0 5%;
+}
+
+.accent {
+   color: #50e3c2;
+}
+
+.sidebar .sidebarname4 h2 {
+   
+color: rgba(80, 227, 194, 0.63)
+}
+
+.link-title {
+   display: inline;
+}
+
+.link-title2 {
+   display: inline;
+}
+
+.icons {
+   display: flex;
+   justify-content: space-between;
+}
+
+
+
+@media (min-width: 480px) {
+   .image {
+      display: block;
+   }
+   .menu-button {
+      display: flex;
+      justify-content: flex-start;
+      height: 450vh;
+   }
+   .body-wrapper {
+      margin-right: 7%;
+   }
+   
+   .menu-button.open{
+      height: auto;
+      width: 7.8rem;
+
+   }
+   
+   .menu-button.open .ham-nav {
+      margin-right: 2.5rem;
+      
+   }
+   
+   .sidebar.open {
+   text-align: right;
+   }
+
+   .sidebar .body-wrapper1 {
+      margin-top: 10rem;
+   }
+
+   input {
+      width: 3.96rem;
+   }
+   input.input3 {
+      margin-left: 10rem;
+      width: 1.79rem;
+      
+   }
+   .sidebar p {
+      margin-bottom: 40px;
+   }
+}
+@media only screen and (min-width: 1024px) {
+
+.wrapper-main {
+width: 121.5rem;
+margin-right: 0;
+display: flex;
+flex-direction: row-reverse;
+}
+.sidebar {
+   display:flex;
+   width: 275.3rem;
+}
+
+.menu-button {
+   display: none;
+}
+
+.header {
+   width: 0%;
+   height: 6rem;
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+   padding-left: -5%;
+}
+
+.sidebar .body-wrapper1 {
+   margin-top: 1rem;
+}
+
+}

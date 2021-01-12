@@ -1,0 +1,113 @@
+:root {
+  --headline-font: "Source Sans Pro", sans-serif;
+  --body-font: "Open Sans", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+.home {
+background-image: url(../images/Me.png) ;
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+.accent {
+  color: #50e3c2;
+}
+
+.home-wrapper {
+color: #dafcf5;
+position: relative;
+min-height: 100vh;
+background-color: rgba(28, 76, 164, 0.77);
+}
+
+.container {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 84px 20px 0 20px;
+}
+
+h1.my-name {
+font-family:;
+text-align: left;
+font-size: 56px;
+line-height: 56px;
+color: #f2f2f2;
+}
+
+p.Intro {
+font-family:;
+font-size:24px;
+line-height: 46px;
+font-weight: ligther;
+color: #dafcf5;
+letter-spacing:0;
+}
+
+.enter-button {
+align-self: center;
+padding-bottom: 42px;
+font-size:34px;
+text-decoration-line: none;
+color: #50e3c2;
+font-weight: 800;
+font-family:;
+}
+
+@media (min-width: 480px) {
+.my-name {
+width: 67rem;
+font-size: 8rem;
+line-height: 6.2rem;
+display: flex;
+flex-direction: column;
+}
+}
+
+.intro {
+   width: 67rem;
+}
+
+@media (min-width: 1024px) {
+  .home {
+     background-position: 100%;
+     background-size: 60%;
+  }
+
+  .home-wrapper {
+     width: 40%;
+     display: flex;
+     background-color: #1c4ca4;
+  }
+
+  .container {
+     padding: 0 4rem 0 4rem;
+     text-align: left;
+  }
+
+
+  .menu-button {
+     display: none;
+  }
+
+  .sidebar {
+  display: block;
+  padding: 0px 2rem 0 3.5rem;
+  width: 40%;
+}
+
+p.Intro {
+   width: 25.2rem;
+}
+
+.enter-button {
+      width: 67rem;
+}
